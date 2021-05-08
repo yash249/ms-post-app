@@ -1,0 +1,31 @@
+.App {
+  border: 1px solid blue;
+  /* padding: 10px 15px; */
+
+  /* margin: 20px 40px 20px 20px; */
+}
+
+.Heading {
+  /* border: 1px solid black; */
+  border-bottom: 1px solid blue;
+  background: lightblue;
+  text-align: center;
+  font: caption;
+  color: darkblue;
+}
+
+.Header {
+  padding: 5px 5px;
+  border-bottom: 1px solid blue;
+}
+
+.filter{
+  display: inline-block;
+  cursor: pointer;
+  color: blueviolet;
+  font-weight: bolder;
+}
+
+.filter:hover{
+  text-decoration: underline;
+}
