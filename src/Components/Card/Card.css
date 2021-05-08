@@ -9,7 +9,6 @@
 }
 
 .image {
-    width: 200px;
     cursor: pointer;
 }
 
@@ -31,6 +30,7 @@
 .commentBox {
     width: 100%;
     background-color: violet;
+    display: flex;
 }
 
 .commentText {
