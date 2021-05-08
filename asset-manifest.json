@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ms-post-app/static/css/main.448ea494.chunk.css",
+    "main.css": "/ms-post-app/static/css/main.c6199c8d.chunk.css",
     "main.js": "/ms-post-app/static/js/main.cc30557a.chunk.js",
     "main.js.map": "/ms-post-app/static/js/main.cc30557a.chunk.js.map",
     "runtime-main.js": "/ms-post-app/static/js/runtime-main.b0f9e3b2.js",
@@ -10,13 +10,13 @@
     "static/js/3.0367d577.chunk.js": "/ms-post-app/static/js/3.0367d577.chunk.js",
     "static/js/3.0367d577.chunk.js.map": "/ms-post-app/static/js/3.0367d577.chunk.js.map",
     "index.html": "/ms-post-app/index.html",
-    "static/css/main.448ea494.chunk.css.map": "/ms-post-app/static/css/main.448ea494.chunk.css.map",
+    "static/css/main.c6199c8d.chunk.css.map": "/ms-post-app/static/css/main.c6199c8d.chunk.css.map",
     "static/js/2.6056272b.chunk.js.LICENSE.txt": "/ms-post-app/static/js/2.6056272b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b0f9e3b2.js",
     "static/js/2.6056272b.chunk.js",
-    "static/css/main.448ea494.chunk.css",
+    "static/css/main.c6199c8d.chunk.css",
     "static/js/main.cc30557a.chunk.js"
   ]
 }
