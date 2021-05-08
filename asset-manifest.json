@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ms-post-appnpm%20install%20--save%20gh-pages/static/css/main.448ea494.chunk.css",
+    "main.js": "/ms-post-appnpm%20install%20--save%20gh-pages/static/js/main.cc30557a.chunk.js",
+    "main.js.map": "/ms-post-appnpm%20install%20--save%20gh-pages/static/js/main.cc30557a.chunk.js.map",
+    "runtime-main.js": "/ms-post-appnpm%20install%20--save%20gh-pages/static/js/runtime-main.467a91f1.js",
+    "runtime-main.js.map": "/ms-post-appnpm%20install%20--save%20gh-pages/static/js/runtime-main.467a91f1.js.map",
+    "static/js/2.6056272b.chunk.js": "/ms-post-appnpm%20install%20--save%20gh-pages/static/js/2.6056272b.chunk.js",
+    "static/js/2.6056272b.chunk.js.map": "/ms-post-appnpm%20install%20--save%20gh-pages/static/js/2.6056272b.chunk.js.map",
+    "static/js/3.0367d577.chunk.js": "/ms-post-appnpm%20install%20--save%20gh-pages/static/js/3.0367d577.chunk.js",
+    "static/js/3.0367d577.chunk.js.map": "/ms-post-appnpm%20install%20--save%20gh-pages/static/js/3.0367d577.chunk.js.map",
+    "index.html": "/ms-post-appnpm%20install%20--save%20gh-pages/index.html",
+    "static/css/main.448ea494.chunk.css.map": "/ms-post-appnpm%20install%20--save%20gh-pages/static/css/main.448ea494.chunk.css.map",
+    "static/js/2.6056272b.chunk.js.LICENSE.txt": "/ms-post-appnpm%20install%20--save%20gh-pages/static/js/2.6056272b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.467a91f1.js",
+    "static/js/2.6056272b.chunk.js",
+    "static/css/main.448ea494.chunk.css",
+    "static/js/main.cc30557a.chunk.js"
+  ]
+}
