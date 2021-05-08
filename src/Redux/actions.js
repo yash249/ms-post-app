@@ -9,14 +9,20 @@ const fetchPostsSuccess = posts => ({
 /*asynchronous thunk action creator
   calls the api, then dispatches the synchronous action creator
 */
-export const fetchPosts =  () => {
+export const fetchPosts = () => {
     return async dispatch => {
         try {
             let posts = await axios.get('https://raw.githubusercontent.com/Lokenath/MyRepo/master/Test/package.json')
             dispatch(fetchPostsSuccess(posts.data.pics)) //store first five posts
         }
-        catch(e){
+        catch (e) {
             console.log(e)
         }
+    }
+}
+
+export const searchedPosts = (data) => {
+    return (dispatch, getState) => {
+        dispatch({ type: 'SEARCHED_POST', data })
     }
 }

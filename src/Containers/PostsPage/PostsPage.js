@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Card from '../../Components/Card/Card'
 import { connect } from 'react-redux'
+import { searchedPosts } from '../../Redux/actions'
 import './PostsPage.css'
 
 class PostsPage extends Component {
@@ -78,11 +79,13 @@ class PostsPage extends Component {
     }
 
     onSearchTermEntered = (event) => {
+        console.log(event)
         const results = this.props.picsData.filter(item =>
             item.category.toLowerCase().includes(event.target.value)
         );
 
-        this.setState({ picsData: results })
+        this.props.searchedPosts(results)
+
     }
 
     onImageClick = (url) => {
@@ -122,7 +125,7 @@ class PostsPage extends Component {
                         <div className="filter" onClick={this.filterByMostLiked}>Most Liked</div>
                         <div className="filter">|</div>
                         <div className="filter" onClick={this.filterByMostCommented}>Most Commented</div>
-                        <input type="search" onChange={this.onSearchTermEntered} placeholder="Search Images"></input>
+                        <input style={{ marginLeft: "15%" }} type="search" onChange={this.onSearchTermEntered} placeholder="Search Images"></input>
                     </div>
                     <div className="Cards">
                         {this.props.picsData.map(item => <Card onDeleteClick={this.onDeleteClick} onImageClick={this.onImageClick} onPostClicked={this.onPostClicked} onCommentChange={this.onCommentChange} onLikeClicked={this.onLikeClicked} {...item} />)}
@@ -137,4 +140,9 @@ const mapStateToProps = state => ({
     picsData: state,
 });
 
-export default connect(mapStateToProps)(PostsPage);
+const mapDispatchToProps = dispatch => {
+    return {
+        searchedPosts: (data) => dispatch(searchedPosts(data))
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(PostsPage);

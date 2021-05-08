@@ -23,7 +23,7 @@ const Card = (props) => {
                             <div data-test="numberOfLikes">
                                 {props.likes}
                             </div>
-                            <div style={{ cursor: "pointer", marginLeft: "5px" }} data-test="button-like" onClick={() => props.onLikeClicked(props.id)}>
+                            <div style={{ cursor: "pointer", marginLeft: "5px", color: "blue", textDecoration:"underline" }} data-test="button-like" onClick={() => props.onLikeClicked(props.id)}>
                                 {props.liked ? "Unlike" : "Like"}
                             </div>
                         </div>
@@ -36,7 +36,7 @@ const Card = (props) => {
                     <div className="comments">{props.comments ? props.comments
                         .map((item, key) => <div style={{ backgroundColor: "wheat", borderBottom: "1px solid blue" }}>
                             <div data-test="comment" className="comment">{item}</div>
-                            <div className="deleteIcon" onClick={() => props.onDeleteClick(props.id, key)}>
+                            <div  className="deleteIcon" onClick={() => props.onDeleteClick(props.id, key)}>
                                 <i class="fa fa-trash"></i>
                             </div>
                         </div>) : null}

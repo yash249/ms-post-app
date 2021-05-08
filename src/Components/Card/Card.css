@@ -4,12 +4,13 @@
     margin: 10px;
     border: 1px solid blue;
     display: inline-block;
-    box-shadow: 0 4px 8px 0 blue(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
 
 .image {
     width: 200px;
+    cursor: pointer;
 }
 
 .picture-subInfo {
@@ -19,10 +20,12 @@
 .like-styles {
     padding-left: 5px;
     display: inline-flex;
+    font-size: 14px;
 }
 .categoryTypeStyles {
     float: right;
     padding-right: 5px;
+    font-size: 14px;
 }
 
 .commentBox {
@@ -59,7 +62,17 @@
 .comment{
     display: inline-block;
     width: 170px;
-
 }
+
+.tooltipStyle{
+display: none;
+position: absolute;
+padding: 0px 15px;
+background-color: beige;
+border-radius: 10px;
+margin-left: 15px;
+}
+
+
 
 

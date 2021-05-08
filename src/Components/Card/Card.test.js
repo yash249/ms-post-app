@@ -4,15 +4,15 @@ import Card from './Card';
 
 const props = {
   comments: ['test Comment'],
-  url:"",
-  id:0,
-  category:"birds",
+  url: "",
+  id: 0,
+  category: "birds",
   liked: false,
   onImageClick: jest.fn(),
   onDeleteClick: jest.fn(),
   onPostClicked: jest.fn(),
   onLikeClicked: jest.fn(),
- }
+}
 
 describe('Card component', () => {
   it('Card component renders correctly', () => {
@@ -28,7 +28,7 @@ describe('Card component', () => {
   });
 
   it('posts comment when button is clicked', () => {
-    const wrapper = shallow(<Card likes={0} {...props}/>);
+    const wrapper = shallow(<Card likes={0} {...props} />);
     const postButton = wrapper.find('[data-test="button-post"]');
     postButton.simulate('click');
     const text = wrapper.find('[data-test="comment"]').text();
@@ -36,7 +36,7 @@ describe('Card component', () => {
   });
 
   it('increases number of likes when like button clicked', () => {
-    const wrapper = shallow(<Card likes={1} {...props}/>);
+    const wrapper = shallow(<Card likes={1} {...props} />);
     const likeButton = wrapper.find('[data-test="button-like"]');
     likeButton.simulate('click');
     const text = wrapper.find('[data-test="numberOfLikes"]').text();

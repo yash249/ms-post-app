@@ -1,8 +1,10 @@
-const posts = (state = [] , action) => {
+const posts = (state = [], action) => {
 
-    switch(action.type) {
+    switch (action.type) {
         case 'FETCH_POSTS_SUCCESS':
             return action.payload.posts
+        case 'SEARCHED_POST':
+            return action.data
         default:
             return state
     }

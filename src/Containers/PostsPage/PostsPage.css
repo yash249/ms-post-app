@@ -14,7 +14,9 @@
     display: inline-block;
     cursor: pointer;
     color: blueviolet;
-    font-weight: bolder;
+    font-weight: normal;
+    text-decoration: underline;
+    padding: 3px;
   }
   
   .filter:hover{
